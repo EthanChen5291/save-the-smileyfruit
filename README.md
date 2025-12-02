@@ -53,8 +53,7 @@ The program is broken into clear subsystems:
 - Data Types: Custom types (Pt2, Face, ArrowKey) keep the game state structured and predictable.
 
 
-================================ TESTING ================================
-
+================================= TESTING =================================
 The project includes a complete suite of checks validating:
 - Movement behavior across all zones
 - Splatter logic
