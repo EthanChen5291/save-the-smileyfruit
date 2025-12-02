@@ -40,20 +40,20 @@ A fruit is removed only if:
 
 The program is broken into clear subsystems:
 
---- Rendering: Custom functions draw smileyfruit, squashed fruit, and the full game scene. Image composition is handled through place-image layering.
+- Rendering: Custom functions draw smileyfruit, squashed fruit, and the full game scene. Image composition is handled through place-image layering.
 
---- Movement: Pure functions move fruit downward, respecting the death zone and applying fall depth to splatter height.
+- Movement: Pure functions move fruit downward, respecting the death zone and applying fall depth to splatter height.
 
---- Spawning: Randomized color, x-position, direction, and fall depth are generated through controlled helper functions.
+- Spawning: Randomized color, x-position, direction, and fall depth are generated through controlled helper functions.
 
---- Interaction: Conversion from keyboard input to ArrowKey data types and fruit removal logic based on tap-zone position and direction matching.
+- Interaction: Conversion from keyboard input to ArrowKey data types and fruit removal logic based on tap-zone position and direction matching.
 
---- Reactor Loop: The reactor ties everything together via on-tick (movement/spawn), on-key (removal), and to-draw (rendering) handlers.
+- Reactor Loop: The reactor ties everything together via on-tick (movement/spawn), on-key (removal), and to-draw (rendering) handlers.
 
---- Data Types: Custom types (Pt2, Face, ArrowKey) keep the game state structured and predictable.
+- Data Types: Custom types (Pt2, Face, ArrowKey) keep the game state structured and predictable.
 
 
---- Testing ---
+================================ TESTING ================================
 
 The project includes a complete suite of checks validating:
 - Movement behavior across all zones
