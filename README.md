@@ -54,6 +54,7 @@ The program is broken into clear subsystems:
 
 
 ================================= TESTING =================================
+
 The project includes a complete suite of checks validating:
 - Movement behavior across all zones
 - Splatter logic
